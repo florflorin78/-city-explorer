@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portofoliu - Florin Budacu</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Florin Budacu</h1>
-<p>Bine ai venit!</p>
+
+    <!--a.-->
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--b.-->
+        <section id="destinatii">
+            <h2>Destinații populare</h2>
+            <div class="cards">
+                <!-- d.-->
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p><strong>Țara:</strong> Portugalia</p>
+                    <p>Orașul celor șapte coline și tramvaiele galbene.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Praga</h3>
+                    <p><strong>Țara:</strong> Cehia</p>
+                    <p>Orașul cu o arhitectură gotică impresionantă.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p><strong>Țara:</strong> Italia</p>
+                    <p>Un muzeu în aer liber plin de vestigii antice.</p>
+                    <p><em>Durată recomandată: 5 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Viena</h3>
+                    <p><strong>Țara:</strong> Austria</p>
+                    <p>Orașul imperial al muzicii și palatelor regale.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Amsterdam</h3>
+                    <p><strong>Țara:</strong> Țările de Jos</p>
+                    <p>Celebru pentru canalele pitorești și biciclete.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+            </div>
+        </section>
+
+        <!--c.-->
+        <section id="planifica">
+            <h2>Planifică-ți călătoria</h2>
+            <form class="planner-form">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Viena">Viena</option>
+                    <option value="Amsterdam">Amsterdam</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!--d.-->
+        <section id="recomandari">
+            <h2>Recomandări de călătorie</h2>
+            <ul>
+                <li>Verifică valabilitatea documentelor.</li>
+                <li>Cumpără carduri de transport local.</li>
+                <li>Descarcă hărți offline înainte de plecare.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!--e.-->
+    <footer class="site-footer">
+        <p>City Explorer &copy; 2026 | Florin Budacu</p>
+    </footer>
+
 </body>
 </html>
