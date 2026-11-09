@@ -1,7 +1,9 @@
+import { nr } from '../utils/destinatii.js'
+
 export default function Rezumat({ total, nevizitate, zile }) {
   return (
     <p className="rezumat">
-      {total} destinatii, {nevizitate} nevizitate, {zile} zile de vizitat
+      {nr(total, 'destinații')}, {nevizitate} nevizitate, {nr(zile, 'zile')} de vizitat
     </p>
-  );
+  )
 }

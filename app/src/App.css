@@ -46,7 +46,7 @@ button {
   background: #f3f4f6;
 }
 
-/* Exercitiul 1e */
+/* 1e: */
 .lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -83,3 +83,116 @@ button {
 .card.vizitat button {
   background: #1cb05b;
 }
+/* lab4:  */
+
+.formular {
+  align-items: flex-start;
+}
+
+.camp {
+  flex: 1;
+  min-width: 0;
+}
+
+.camp input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cautare {
+  margin-bottom: 1.2rem;
+}
+
+.cautare input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+}
+
+/* 3d: */
+
+.stare {
+  padding: 0.8rem 1rem;
+  border-radius: 9px;
+  background: #eff4ff;
+  color: #1e3a8a;
+}
+
+.stare.eroare {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.formular input.invalid {
+  border-color: #dc2626;
+  background: #fff5f5;
+}
+
+.eroare-camp {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #dc2626;
+}
+
+button:disabled {
+  background: #a9a3d6;
+  cursor: default;
+}
+
+.gol {
+  padding: 1.6rem 1rem;
+  border: 1px dashed #c3c7cf;
+  border-radius: 9px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* 5c:  */
+
+.paginare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+/* 4: */
+
+.panou {
+  margin-bottom: 1.4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px; /* 6: lipsea px */
+}
+
+.panou h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.panou label {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.panou input {
+  width: 70px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.panou ul {
+  margin: 0.7rem 0 0 0;
+  padding-left: 1.1rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* 7:".panou h2 { margin: 0 }" anula margin-bottom de mai sus */
